@@ -1,0 +1,353 @@
+html{
+  font-size:18px;
+  font-family: "Helvetica", sans-serif;
+  background-color:white;
+}
+body {
+  line-height: 1.4;
+}
+
+h1,
+h4 {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.company{
+  background-color: cadetblue;
+  color: white;
+  position: fixed;
+  display: flex;
+  display: inline-block;
+  align-items: center;
+  width: 960px;
+  left: 25rem;
+
+}
+.container1{
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  height:50px;
+  background-color: cadetblue;
+  color: white;
+}
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem 0.5rem;
+}
+.company .container1 {
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem 0.5rem;
+}
+.company img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+.company1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background-color: cadetblue;
+  color: white;
+}
+.company1 div{
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.company ul{
+  margin-right: 1rem;
+}
+.company li{
+  display: inline;
+  padding: 0 1rem;
+}
+/* Main Banner */
+
+.main-banner {
+  background: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  padding-top: 1rem;
+  color:white;
+  display: flex;
+  font-family: Helvetica;
+  font-size: 1rem;
+  width:100%;
+}
+.content2{
+  position: relative;
+  top: 10rem;
+  left: 10rem;
+  width: 27rem;
+  padding: 1.5rem 5rem;
+  background-color:white;
+  color:black;
+  display: inline-block;
+  margin-right: -2rem;
+  background-color: white;
+}
+.content2 h1{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+
+  .content2 {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+  .content2 h1 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .company {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .company1{
+    max-width: 100%;
+  }
+
+  .content2{
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .content2 h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.truncated-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .company div h1 {
+    display: none;
+  }
+
+  .main-banner {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .main-banner {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+  }
+}
+/* Navigation Bar */
+
+nav {
+  background-color: cadetblue;
+  color: white;
+
+}
+
+nav ul{
+  opacity:0.9;
+  display: flex;
+  display:inline-block;
+  padding: 20px 10px;
+}
+/*Products and Business Information Section */
+
+.products,
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 560px) {
+  .products{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+  }
+}
+
+.product {
+  width: 30%;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+.products{
+  flex-wrap: wrap;
+  justify-content:center;
+  display: flex;
+  margin:auto;
+  margin: 3rem;
+}
+
+.product img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+.product-image img.product-image {
+  width: 3.5rem;
+}
+@media only screen and (max-width: 560px) {
+  .product-image {
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+  .product-truck{
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+  .product-ruler{
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+}
+
+.description {
+  display: block;
+  padding: 0.5rem;
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+
+/* Info Section */
+.business-info{
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+
+}
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+
+.title {
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+}
+
+@media only screen and (max-width: 560px) {
+  .info {
+    width: 100%;
+  }
+
+  .info .title {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .info p {
+    padding: 1rem;
+    font-size: .77rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  .product.truck {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.ruler {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem 2rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 560px) {
+  footer {
+    justify-content: center;
+  }
+
+  footer div {
+    display: none;
+  }
+}
